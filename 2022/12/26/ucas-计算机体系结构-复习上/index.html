@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ucas-计算机体系结构-复习上 | 唐仔橙</title><meta name="author" content="唐仔橙,tangzicheng233@gmail.com"><meta name="copyright" content="唐仔橙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2023年 年终总结报告​		当初选这门课,就是想打牢计算机基础,没想着真要造CPU…课程确实是有点难度的,所以对于这次期末考试,我的计划是,着重复习重点的知识以及目前和可预见的将来对自己比较重要的章节,至少保证及格!! 然后学到一点东西! 必考题型复习https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_43840665&#x2F;article&#x2F;details&#x2F;122281422 https:&#x2F;&#x2F;f.dai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ucas-计算机体系结构-复习上">
+<meta property="og:url" content="https://tangzichengcc.github.io/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/index.html">
+<meta property="og:site_name" content="唐仔橙">
+<meta property="og:description" content="2023年 年终总结报告​		当初选这门课,就是想打牢计算机基础,没想着真要造CPU…课程确实是有点难度的,所以对于这次期末考试,我的计划是,着重复习重点的知识以及目前和可预见的将来对自己比较重要的章节,至少保证及格!! 然后学到一点东西! 必考题型复习https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_43840665&#x2F;article&#x2F;details&#x2F;122281422 https:&#x2F;&#x2F;f.dai">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tangzichengcc.github.io/img/background/15.png">
+<meta property="article:published_time" content="2022-12-26T08:03:28.000Z">
+<meta property="article:modified_time" content="2022-12-31T16:56:08.279Z">
+<meta property="article:author" content="唐仔橙">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tangzichengcc.github.io/img/background/15.png"><link rel="shortcut icon" href="/img/favicon.webp"><link rel="canonical" href="https://tangzichengcc.github.io/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 唐仔橙","link":"链接: ","source":"来源: 唐仔橙","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ucas-计算机体系结构-复习上',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-01 00:56:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/profile.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/background/15.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">唐仔橙</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ucas-计算机体系结构-复习上</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-26T08:03:28.000Z" title="发表于 2022-12-26 16:03:28">2022-12-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-31T16:56:08.279Z" title="更新于 2023-01-01 00:56:08">2023-01-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="ucas-计算机体系结构-复习上"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="2023年-年终总结报告"><a href="#2023年-年终总结报告" class="headerlink" title="2023年 年终总结报告"></a>2023年 年终总结报告</h1><h1 id><a href="#" class="headerlink" title></a></h1><p>​		当初选这门课,就是想打牢计算机基础,没想着真要造CPU…课程确实是有点难度的,所以对于这次期末考试,我的计划是,着重复习重点的知识以及目前和可预见的将来对自己比较重要的章节,至少保证及格!! 然后学到一点东西!</p>
+<h1 id="必考题型复习"><a href="#必考题型复习" class="headerlink" title="必考题型复习"></a>必考题型复习</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43840665/article/details/122281422">https://blog.csdn.net/qq_43840665/article/details/122281422</a></p>
+<p><a target="_blank" rel="noopener" href="https://f.daixianiu.cn/csdn/4209862890104209.html">https://f.daixianiu.cn/csdn/4209862890104209.html</a></p>
+<p>本科教材《》</p>
+<p>可以做做本科后面的那个习题</p>
+<h1 id="第一二章"><a href="#第一二章" class="headerlink" title="第一二章"></a>第一二章</h1><h3 id="考点-性能、成本、功耗的计算"><a href="#考点-性能、成本、功耗的计算" class="headerlink" title="考点: 性能、成本、功耗的计算"></a>考点: 性能、成本、功耗的计算</h3><p>性能:根据指令算IPC,两台机器比较性能,那个多长时间执行了多少指令</p>
+<p>成本:硅片成本</p>
+<p>功耗:静态功耗、动态功耗</p>
+<h3 id="习题1-性能计算"><a href="#习题1-性能计算" class="headerlink" title="习题1: 性能计算"></a>习题1: 性能计算</h3><p>在3台不同指令系统的计算机上运行同一程序P时，A机需要执行 1.0 * 10^8 条指令，B机需要执行 2.0 * 10^8 条指令，C机需要执行4.0 * 10^8条指令，但实际执行时间都是10s。请分别计算这3台机器在运行程序P时的实际速度，以MIPS为单位。这3台计算机在运行程序P时，哪一台性能最高？为什么？</p>
+<h3 id="解答"><a href="#解答" class="headerlink" title="解答:"></a>解答:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">常用指标MIPS(Million Instructions Per Second),每秒钟执行多少条指令. 所以每个数除10s,并且再除10的6次方(百万)</span><br><span class="line">如果看性能的话,还是要比较时间,所以性能一样</span><br><span class="line">A:10MIPS B:20MIPS C:40MIPS</span><br></pre></td></tr></table></figure>
+
+<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识:"></a>基础知识:</h3><p>​		MIPS并不是很合理,因为没有说明一条指令能干多少事.目前常用的一个性能指标还有MFLOPS,它是指每秒钟做多少个浮点运算.也可能会考,这个指标也有类似的问题,没衡量能做多少事.</p>
+<h3 id="习题5-功耗计算"><a href="#习题5-功耗计算" class="headerlink" title="习题5: 功耗计算"></a>习题5: 功耗计算</h3><p>对某处理器进行功耗测试，得到如下数据：时钟不翻转，电压1.05V时，电流为500mA；时钟频率为1GHz，电压1.1V时，电流为2500mA。请计算在1.1V下，此处理器的静态功耗以及500MHz下的总功耗。</p>
+<h3 id="基础知识-1"><a href="#基础知识-1" class="headerlink" title="基础知识:"></a>基础知识:</h3><p>总功耗 &#x3D; 动态功耗+ 静态功耗</p>
+<p>动态功耗与时钟频率(翻转率)成正比</p>
+<h3 id="解答-1"><a href="#解答-1" class="headerlink" title="解答:"></a>解答:</h3><p>先在时钟不翻转时计算电阻, R &#x3D; U&#x2F;I, R&#x3D;2.1欧姆. 静态功耗是不变的,此时可以计算静态功耗,静态功耗 &#x3D; U*U &#x2F; R  &#x3D; 1.1 * 1.1 &#x2F; 2.1 &#x3D; 0.576w</p>
+<p>我们此时计算出1.1v,1GHz下的动态功耗,然后进行比例计算,就可以得到500MHz下的动态功耗了,</p>
+<p>1.1v,1GHz下的动态功耗 &#x3D; 总功耗 - 静态功耗 &#x3D; U * I - 静态功耗 &#x3D; 1.1 * 2.5 - 0.576 &#x3D; 2.174w</p>
+<p>所以500MHz下的动态功耗 &#x3D; 500&#x2F;1000 * 2.174 &#x3D; 1.087 w</p>
+<p>所以500MHz下的总功耗 &#x3D; 动态功耗 + 静态功耗 &#x3D; 1.087 + 0.576  &#x3D; 1.663w</p>
+<h1 id="第三章-二进制与逻辑电路"><a href="#第三章-二进制与逻辑电路" class="headerlink" title="第三章 二进制与逻辑电路"></a>第三章 二进制与逻辑电路</h1><p>浮点数的表示不考,但是定点数的要考</p>
+<h3 id="习题1-定点数的表示"><a href="#习题1-定点数的表示" class="headerlink" title="习题1:定点数的表示"></a>习题1:定点数的表示</h3><h4 id="1-分别给出64位定点原码和补码表示的数的范围"><a href="#1-分别给出64位定点原码和补码表示的数的范围" class="headerlink" title="(1)分别给出64位定点原码和补码表示的数的范围"></a>(1)分别给出64位定点原码和补码表示的数的范围</h4><p>原码: 最高位符号位 0正 1负</p>
+<p>正: 0~ 2的63次方-1</p>
+<p>负: -(2的63次方-1) ~0</p>
+<p>综上, </p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231153957522.png" alt="image-20221231153957522"></p>
+<p>补码:</p>
+<p>正:0~ 2的63次方-1</p>
+<p>负:-2的63次方 ~ -1</p>
+<p>综上</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231153942328.png" alt="image-20221231153942328"></p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231233557002.png" alt="image-20221231233557002"></p>
+<h4 id="2-在32位定点补码表示中-0x80000000表什么数"><a href="#2-在32位定点补码表示中-0x80000000表什么数" class="headerlink" title="(2)在32位定点补码表示中,0x80000000表什么数"></a>(2)在32位定点补码表示中,0x80000000表什么数</h4><p>1000 0000 0000 0000 0000  0000  0000  0000  </p>
+<p>这个是补码,转换成原码后再算,</p>
+<p>最高位不变,其余转换,然后最低位+1, 于是得到 32个0和最高位的1,溢出了??????????????</p>
+<p>所以答案是-2的31次方</p>
+<h3 id="习题三-画出-e-x3D-a-amp-b-c-amp-d-的晶体管级电路图"><a href="#习题三-画出-e-x3D-a-amp-b-c-amp-d-的晶体管级电路图" class="headerlink" title="习题三:画出 e&#x3D;a&amp;b | c&amp;d 的晶体管级电路图"></a>习题三:画出 e&#x3D;a&amp;b | c&amp;d 的晶体管级电路图</h3><p>本科教材p184</p>
+<p>解法1:</p>
+<p>首先由N管组成“正逻辑”,串联表示与,并联表示或. 再用P管组成“反逻辑”,串联表示或,并联表示与.最后再把正反逻辑串联</p>
+<p>这得到的是 ~(a&amp;b | c&amp;d ), 可以加一个反相器,</p>
+<img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231161439711.png" alt="image-20221231161439711" style="zoom:33%;">
+
+<p>解法2: </p>
+<p>先做一个转换,转换成两级与非门的逻辑,然后再画,与非门什么的参考本科教材, 转换的话,记住那些转换公式</p>
+<p> e&#x3D;a&amp;b | c&amp;d  &#x3D; <del>(</del>(A&amp;B) &amp; ~(C&amp;D))</p>
+<p>还是这个做法:首先由N管组成“正逻辑”,串联表示与,并联表示或. 再用P管组成“反逻辑”,串联表示或,并联表示与.最后再把正反逻辑串联</p>
+<p>分别8⃣️</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231201126197.png" alt="image-20221231201126197"></p>
+<h3 id="习题四-计算一个FO4的延迟-假设反相器的输入电容位0-0036pF-平均每个负载连线电容位0-0044pF-翻转延迟位0-023ns-每pF延迟为4-5ns"><a href="#习题四-计算一个FO4的延迟-假设反相器的输入电容位0-0036pF-平均每个负载连线电容位0-0044pF-翻转延迟位0-023ns-每pF延迟为4-5ns" class="headerlink" title="习题四: 计算一个FO4的延迟,假设反相器的输入电容位0.0036pF,平均每个负载连线电容位0.0044pF,翻转延迟位0.023ns,每pF延迟为4.5ns"></a>习题四: 计算一个FO4的延迟,假设反相器的输入电容位0.0036pF,平均每个负载连线电容位0.0044pF,翻转延迟位0.023ns,每pF延迟为4.5ns</h3><p>课本p48</p>
+<p>FO4延迟 &#x3D; 本征延迟(本身延迟) + 负载延迟 &#x3D; 0.023 + 4.5((0.0036+0.0044)*4) &#x3D; 0.167ns</p>
+<p>负载延迟又和该电源的负载相关</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231201615028.png" alt="image-20221231201615028"></p>
+<h1 id="第五章-静态流水线"><a href="#第五章-静态流水线" class="headerlink" title="第五章 静态流水线"></a>第五章 静态流水线</h1><p>哪个是真相关,哪个是假相关?</p>
+<p>五级流水的时空图,前递 ,有无前递(旁路)</p>
+<p>给几条指令,有无前递的 画出来</p>
+<p>和转移相关的就比较复杂了,</p>
+<p>这里不能够前递是因为取址loadword指令的话需要访存阶段才能够拿到数值吧</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221226163902930.png" alt="image-20221226163902930"></p>
+<h1 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h1><p>执行延迟:统一到这个</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221226160418121.png" alt="image-20221226160418121"></p>
+<p>mips 转移指令有延迟槽??</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43752162/article/details/122136323">https://blog.csdn.net/weixin_43752162/article/details/122136323</a></p>
+<h3 id="前递-旁路-有哪几种"><a href="#前递-旁路-有哪几种" class="headerlink" title="前递(旁路)有哪几种?"></a>前递(旁路)有哪几种?</h3><p>mem -》 ex</p>
+<p>ex -〉 ex</p>
+<p>啥叫全旁路??</p>
+<p>load的时候需要在mem才能给前递??</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231224522974.png" alt="image-20221231224522974"></p>
+<h1 id="mips寄存器"><a href="#mips寄存器" class="headerlink" title="mips寄存器"></a>mips寄存器</h1><h1 id="第十章-高速缓存"><a href="#第十章-高速缓存" class="headerlink" title="第十章: 高速缓存"></a>第十章: 高速缓存</h1><p>VIPT(虚index,实tag)结构中,需要在cache中使用页着色技术.vipt即用虚拟地址索引cache,用物理地址匹配tag</p>
+<p>当vipt的cache,每一路的容量大于页的大小的时候,就会出现cache别名问题</p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231211724962.png" alt="image-20221231211724962"></p>
+<p>这个同学总结的非常精辟…我就不多费时间了…</p>
+<p>考虑如下情况：<br>32位机器，虚地址V1：0xe0001120 虚地址V2：0xf0002120，都映射到物理地址P: 0x00000120。<br>页大小4KB，占地址的低12位。于是虚拟地址和物理地址的第12位一定相同。<br>当Cache每路的大小不超过页大小时，用来i n d e x indexindex的地址位在[ 11 ： 0 ] 之间，于是V1和V2的i n d e x indexindex相同，在Cache中索引到同一项，于是不会出现别名。 当Cache每路的大小超过页大小时，如每路容量8KB，用来i n d e x indexindex的地址位在[ 12 ： 0 ]之间。而V1和V2的第13位不同，于是索引到Cache的不同行，于是出现了同一物理地址的多处备份，也即别名。<br>为解决别名问题，引入软件的<strong>页着色</strong>，它保证，在给虚拟地址分配物理地址时，如果两个虚拟地址映射到同一物理地址，要求两个虚拟地址的<strong>页着色位相同</strong>，即上图中对应Cache I n d e x IndexIndex与P a g e − o f f s e t Page-offsetPage−offset之间差额的灰色部分相同。</p>
+<h1 id="第十一章-存储管理"><a href="#第十一章-存储管理" class="headerlink" title="第十一章: 存储管理"></a>第十一章: 存储管理</h1><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231225308131.png" alt="image-20221231225308131"></p>
+<p>16*4 + 128</p>
+<p>(64&#x2F;2 + 64&#x2F;2 ) * 3 + 64</p>
+<p>(64&#x2F;2 + 64&#x2F;2 ) * 3 + 64</p>
+<h1 id="20年题目"><a href="#20年题目" class="headerlink" title="20年题目"></a>20年题目</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231230312603.png" alt="image-20221231230312603"></p>
+<p>五级流水: 取址,译码,执行,访存,写会  IF,ID,EX,MEM,WB 英文全称是什么呢??</p>
+<p>指令相关: 数据相关、结构相关和控制相关</p>
+<p>数据相关: WAW,RAW,WAR</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231230617385.png" alt="image-20221231230617385"></p>
+<p>注意还要除 million, 10的6次方</p>
+<p>(1)</p>
+<p>A:2  B:4 C:3 MIPS</p>
+<p>(2) 都一样,因为运行时间一样</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231232854416.png" alt="image-20221231232854416"></p>
+<p>(1)</p>
+<p>原码: -2的63次方+1 ~ 2的63次方-1</p>
+<p>补码: -2的63次方 ~ 2的63次方-1</p>
+<p>(2)</p>
+<p>补码:1111 1111 ………………</p>
+<p>原码:1 0000000…… 1 </p>
+<p>所以是-1</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231233718027.png" alt="image-20221231233718027"></p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005546680.png" alt="image-20230101005546680"></p>
+<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231235002314.png" alt="image-20221231235002314"></p>
+<p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005607162.png" alt="image-20230101005607162"></p>
+<h2 id="10"><a href="#10" class="headerlink" title="10"></a>10</h2><p><img src="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005258347.png" alt="image-20230101005258347"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://tangzichengcc.github.io">唐仔橙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://tangzichengcc.github.io/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/">https://tangzichengcc.github.io/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tangzichengcc.github.io" target="_blank">唐仔橙</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/background/15.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/27/ucas-%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86-%E5%A4%8D%E4%B9%A0/"><img class="prev-cover" src="/img/background/10.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">ucas-软件安全原理-复习</div></div></a></div><div class="next-post pull-right"><a href="/2022/12/14/%E4%BB%8E%E8%B6%B3%E7%90%83%E8%A7%A3%E8%AF%B4-%E8%AF%97%E4%BA%BA%E8%B4%BA%E7%82%9C%E9%82%A3%E9%87%8C%E5%AD%A6%E5%88%B0%E7%9A%84%E8%AF%97%E8%AF%8D%E6%AD%8C%E8%B5%8B/"><img class="next-cover" src="/img/background/4.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">从足球解说-诗人贺炜那里学到的诗词歌赋</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/profile.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唐仔橙</div><div class="author-info__description">喜欢探索世界,网络空间安全在读研究生,CTF爱好者的成长记录</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/tangzichengcc"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tangzichengcc" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">会记录自己的学习经历,以及一些经历,如果有想法或者疑惑,欢迎交流!!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2023%E5%B9%B4-%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93%E6%8A%A5%E5%91%8A"><span class="toc-number">1.</span> <span class="toc-text">2023年 年终总结报告</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%85%E8%80%83%E9%A2%98%E5%9E%8B%E5%A4%8D%E4%B9%A0"><span class="toc-number">3.</span> <span class="toc-text">必考题型复习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%BA%8C%E7%AB%A0"><span class="toc-number">4.</span> <span class="toc-text">第一二章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-%E6%80%A7%E8%83%BD%E3%80%81%E6%88%90%E6%9C%AC%E3%80%81%E5%8A%9F%E8%80%97%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">4.0.1.</span> <span class="toc-text">考点: 性能、成本、功耗的计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A0%E9%A2%981-%E6%80%A7%E8%83%BD%E8%AE%A1%E7%AE%97"><span class="toc-number">4.0.2.</span> <span class="toc-text">习题1: 性能计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94"><span class="toc-number">4.0.3.</span> <span class="toc-text">解答:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">4.0.4.</span> <span class="toc-text">基础知识:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A0%E9%A2%985-%E5%8A%9F%E8%80%97%E8%AE%A1%E7%AE%97"><span class="toc-number">4.0.5.</span> <span class="toc-text">习题5: 功耗计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-1"><span class="toc-number">4.0.6.</span> <span class="toc-text">基础知识:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94-1"><span class="toc-number">4.0.7.</span> <span class="toc-text">解答:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E9%80%BB%E8%BE%91%E7%94%B5%E8%B7%AF"><span class="toc-number">5.</span> <span class="toc-text">第三章 二进制与逻辑电路</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A0%E9%A2%981-%E5%AE%9A%E7%82%B9%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">5.0.1.</span> <span class="toc-text">习题1:定点数的表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%86%E5%88%AB%E7%BB%99%E5%87%BA64%E4%BD%8D%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E5%92%8C%E8%A1%A5%E7%A0%81%E8%A1%A8%E7%A4%BA%E7%9A%84%E6%95%B0%E7%9A%84%E8%8C%83%E5%9B%B4"><span class="toc-number">5.0.1.1.</span> <span class="toc-text">(1)分别给出64位定点原码和补码表示的数的范围</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%9C%A832%E4%BD%8D%E5%AE%9A%E7%82%B9%E8%A1%A5%E7%A0%81%E8%A1%A8%E7%A4%BA%E4%B8%AD-0x80000000%E8%A1%A8%E4%BB%80%E4%B9%88%E6%95%B0"><span class="toc-number">5.0.1.2.</span> <span class="toc-text">(2)在32位定点补码表示中,0x80000000表什么数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A0%E9%A2%98%E4%B8%89-%E7%94%BB%E5%87%BA-e-x3D-a-amp-b-c-amp-d-%E7%9A%84%E6%99%B6%E4%BD%93%E7%AE%A1%E7%BA%A7%E7%94%B5%E8%B7%AF%E5%9B%BE"><span class="toc-number">5.0.2.</span> <span class="toc-text">习题三:画出 e&#x3D;a&amp;b | c&amp;d 的晶体管级电路图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%A0%E9%A2%98%E5%9B%9B-%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AAFO4%E7%9A%84%E5%BB%B6%E8%BF%9F-%E5%81%87%E8%AE%BE%E5%8F%8D%E7%9B%B8%E5%99%A8%E7%9A%84%E8%BE%93%E5%85%A5%E7%94%B5%E5%AE%B9%E4%BD%8D0-0036pF-%E5%B9%B3%E5%9D%87%E6%AF%8F%E4%B8%AA%E8%B4%9F%E8%BD%BD%E8%BF%9E%E7%BA%BF%E7%94%B5%E5%AE%B9%E4%BD%8D0-0044pF-%E7%BF%BB%E8%BD%AC%E5%BB%B6%E8%BF%9F%E4%BD%8D0-023ns-%E6%AF%8FpF%E5%BB%B6%E8%BF%9F%E4%B8%BA4-5ns"><span class="toc-number">5.0.3.</span> <span class="toc-text">习题四: 计算一个FO4的延迟,假设反相器的输入电容位0.0036pF,平均每个负载连线电容位0.0044pF,翻转延迟位0.023ns,每pF延迟为4.5ns</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E9%9D%99%E6%80%81%E6%B5%81%E6%B0%B4%E7%BA%BF"><span class="toc-number">6.</span> <span class="toc-text">第五章 静态流水线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">7.</span> <span class="toc-text">第六章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E9%80%92-%E6%97%81%E8%B7%AF-%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D"><span class="toc-number">7.0.1.</span> <span class="toc-text">前递(旁路)有哪几种?</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mips%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-number">8.</span> <span class="toc-text">mips寄存器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E9%AB%98%E9%80%9F%E7%BC%93%E5%AD%98"><span class="toc-number">9.</span> <span class="toc-text">第十章: 高速缓存</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86"><span class="toc-number">10.</span> <span class="toc-text">第十一章: 存储管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#20%E5%B9%B4%E9%A2%98%E7%9B%AE"><span class="toc-number">11.</span> <span class="toc-text">20年题目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1"><span class="toc-number">11.1.</span> <span class="toc-text">1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-number">11.2.</span> <span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-number">11.3.</span> <span class="toc-text">3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4"><span class="toc-number">11.4.</span> <span class="toc-text">4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5"><span class="toc-number">11.5.</span> <span class="toc-text">5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10"><span class="toc-number">11.6.</span> <span class="toc-text">10</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/" title="ucas-网络与系统安全-复习"><img src="/img/background/16.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ucas-网络与系统安全-复习"/></a><div class="content"><a class="title" href="/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/" title="ucas-网络与系统安全-复习">ucas-网络与系统安全-复习</a><time datetime="2022-12-30T11:18:28.000Z" title="发表于 2022-12-30 19:18:28">2022-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/27/ucas-%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86-%E5%A4%8D%E4%B9%A0/" title="ucas-软件安全原理-复习"><img src="/img/background/10.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ucas-软件安全原理-复习"/></a><div class="content"><a class="title" href="/2022/12/27/ucas-%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86-%E5%A4%8D%E4%B9%A0/" title="ucas-软件安全原理-复习">ucas-软件安全原理-复习</a><time datetime="2022-12-27T06:12:08.000Z" title="发表于 2022-12-27 14:12:08">2022-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/" title="ucas-计算机体系结构-复习上"><img src="/img/background/15.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ucas-计算机体系结构-复习上"/></a><div class="content"><a class="title" href="/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/" title="ucas-计算机体系结构-复习上">ucas-计算机体系结构-复习上</a><time datetime="2022-12-26T08:03:28.000Z" title="发表于 2022-12-26 16:03:28">2022-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/14/%E4%BB%8E%E8%B6%B3%E7%90%83%E8%A7%A3%E8%AF%B4-%E8%AF%97%E4%BA%BA%E8%B4%BA%E7%82%9C%E9%82%A3%E9%87%8C%E5%AD%A6%E5%88%B0%E7%9A%84%E8%AF%97%E8%AF%8D%E6%AD%8C%E8%B5%8B/" title="从足球解说-诗人贺炜那里学到的诗词歌赋"><img src="/img/background/4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从足球解说-诗人贺炜那里学到的诗词歌赋"/></a><div class="content"><a class="title" href="/2022/12/14/%E4%BB%8E%E8%B6%B3%E7%90%83%E8%A7%A3%E8%AF%B4-%E8%AF%97%E4%BA%BA%E8%B4%BA%E7%82%9C%E9%82%A3%E9%87%8C%E5%AD%A6%E5%88%B0%E7%9A%84%E8%AF%97%E8%AF%8D%E6%AD%8C%E8%B5%8B/" title="从足球解说-诗人贺炜那里学到的诗词歌赋">从足球解说-诗人贺炜那里学到的诗词歌赋</a><time datetime="2022-12-14T13:52:22.000Z" title="发表于 2022-12-14 21:52:22">2022-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/12/%E9%80%86%E5%90%91%E5%85%A5%E9%97%A8-1-%E5%88%9D%E6%8E%A2/" title="逆向入门-1-初探"><img src="/img/background/16.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="逆向入门-1-初探"/></a><div class="content"><a class="title" href="/2022/12/12/%E9%80%86%E5%90%91%E5%85%A5%E9%97%A8-1-%E5%88%9D%E6%8E%A2/" title="逆向入门-1-初探">逆向入门-1-初探</a><time datetime="2022-12-12T02:42:06.000Z" title="发表于 2022-12-12 10:42:06">2022-12-12</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 唐仔橙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

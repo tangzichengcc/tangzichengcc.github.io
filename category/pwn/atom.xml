@@ -5,6 +5,7 @@
     <link href="https://tangzichengcc.github.io" />
     <updated>2022-11-17T14:20:59.000Z</updated>
     <category term="浏览器安全" />
+    <category term="研究生课程" />
     <entry>
         <id>https://tangzichengcc.github.io/2022/11/17/chrome_v8_CVE-2021-21220_%E5%A4%8D%E7%8E%B0%E4%B8%8E%E5%88%86%E6%9E%90/</id>
         <title>CVE-2021-21220 Chrome v8远程代码执行漏洞复现与分析</title>
