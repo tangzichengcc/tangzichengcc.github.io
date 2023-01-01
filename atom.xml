@@ -162,7 +162,12 @@
 &lt;p&gt;啥叫全旁路??&lt;/p&gt;
 &lt;p&gt;load的时候需要在mem才能给前递??&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231224522974.png&#34; alt=&#34;image-20221231224522974&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;mips寄存器&#34;&gt;&lt;a href=&#34;#mips寄存器&#34; class=&#34;headerlink&#34; title=&#34;mips寄存器&#34;&gt;&lt;/a&gt;mips寄存器&lt;/h1&gt;&lt;h1 id=&#34;第十章-高速缓存&#34;&gt;&lt;a href=&#34;#第十章-高速缓存&#34; class=&#34;headerlink&#34; title=&#34;第十章: 高速缓存&#34;&gt;&lt;/a&gt;第十章: 高速缓存&lt;/h1&gt;&lt;p&gt;VIPT(虚index,实tag)结构中,需要在cache中使用页着色技术.vipt即用虚拟地址索引cache,用物理地址匹配tag&lt;/p&gt;
+&lt;h1 id=&#34;mips寄存器&#34;&gt;&lt;a href=&#34;#mips寄存器&#34; class=&#34;headerlink&#34; title=&#34;mips寄存器&#34;&gt;&lt;/a&gt;mips寄存器&lt;/h1&gt;&lt;h1 id=&#34;第八章-转移预测&#34;&gt;&lt;a href=&#34;#第八章-转移预测&#34; class=&#34;headerlink&#34; title=&#34;第八章 转移预测&#34;&gt;&lt;/a&gt;第八章 转移预测&lt;/h1&gt;&lt;p&gt;今年大概率考那个预测情况,推演?看ppt&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101151357744.png&#34; alt=&#34;image-20230101151357744&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-…-的分支预测正确率。（2021复习题）&#34;&gt;&lt;a href=&#34;#分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-…-的分支预测正确率。（2021复习题）&#34; class=&#34;headerlink&#34; title=&#34;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++){…}的分支预测正确率。（2021复习题）&#34;&gt;&lt;/a&gt;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++){…}的分支预测正确率。（2021复习题）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101151819819.png&#34; alt=&#34;image-20230101151819819&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-for-k-x3D-0-k-lt-10-k-…-的分支预测正确率。（2021真题）&#34;&gt;&lt;a href=&#34;#分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-for-k-x3D-0-k-lt-10-k-…-的分支预测正确率。（2021真题）&#34; class=&#34;headerlink&#34; title=&#34;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++) for(k&amp;#x3D;0;k&amp;lt;10;k++){…}的分支预测正确率。（2021真题）&#34;&gt;&lt;/a&gt;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++) for(k&amp;#x3D;0;k&amp;lt;10;k++){…}的分支预测正确率。（2021真题）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101160405246.png&#34; alt=&#34;image-20230101160405246&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101160414867.png&#34; alt=&#34;image-20230101160414867&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第十章-高速缓存&#34;&gt;&lt;a href=&#34;#第十章-高速缓存&#34; class=&#34;headerlink&#34; title=&#34;第十章: 高速缓存&#34;&gt;&lt;/a&gt;第十章: 高速缓存&lt;/h1&gt;&lt;p&gt;VIPT(虚index,实tag)结构中,需要在cache中使用页着色技术.vipt即用虚拟地址索引cache,用物理地址匹配tag&lt;/p&gt;
 &lt;p&gt;当vipt的cache,每一路的容量大于页的大小的时候,就会出现cache别名问题&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231211724962.png&#34; alt=&#34;image-20221231211724962&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这个同学总结的非常精辟…我就不多费时间了…&lt;/p&gt;
@@ -171,6 +176,7 @@
 &lt;p&gt;16*4 + 128&lt;/p&gt;
 &lt;p&gt;(64&amp;#x2F;2 + 64&amp;#x2F;2 ) * 3 + 64&lt;/p&gt;
 &lt;p&gt;(64&amp;#x2F;2 + 64&amp;#x2F;2 ) * 3 + 64&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101160302012.png&#34; alt=&#34;image-20230101160302012&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;20年题目&#34;&gt;&lt;a href=&#34;#20年题目&#34; class=&#34;headerlink&#34; title=&#34;20年题目&#34;&gt;&lt;/a&gt;20年题目&lt;/h1&gt;&lt;h2 id=&#34;1&#34;&gt;&lt;a href=&#34;#1&#34; class=&#34;headerlink&#34; title=&#34;1&#34;&gt;&lt;/a&gt;1&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231230312603.png&#34; alt=&#34;image-20221231230312603&#34;&gt;&lt;/p&gt;
 &lt;p&gt;五级流水: 取址,译码,执行,访存,写会  IF,ID,EX,MEM,WB 英文全称是什么呢??&lt;/p&gt;
 &lt;p&gt;指令相关: 数据相关、结构相关和控制相关&lt;/p&gt;
@@ -192,7 +198,9 @@
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005546680.png&#34; alt=&#34;image-20230101005546680&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;5&#34;&gt;&lt;a href=&#34;#5&#34; class=&#34;headerlink&#34; title=&#34;5&#34;&gt;&lt;/a&gt;5&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231235002314.png&#34; alt=&#34;image-20221231235002314&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005607162.png&#34; alt=&#34;image-20230101005607162&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9-转移猜测&#34;&gt;&lt;a href=&#34;#9-转移猜测&#34; class=&#34;headerlink&#34; title=&#34;9 转移猜测&#34;&gt;&lt;/a&gt;9 转移猜测&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101150434124.png&#34; alt=&#34;image-20230101150434124&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;10&#34;&gt;&lt;a href=&#34;#10&#34; class=&#34;headerlink&#34; title=&#34;10&#34;&gt;&lt;/a&gt;10&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005258347.png&#34; alt=&#34;image-20230101005258347&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101125627193.png&#34; alt=&#34;image-20230101125627193&#34;&gt;&lt;/p&gt;
 </content>
         <updated>2022-12-26T08:03:28.000Z</updated>
     </entry>
