@@ -153,6 +153,7 @@
 &lt;p&gt;和转移相关的就比较复杂了,&lt;/p&gt;
 &lt;p&gt;这里不能够前递是因为取址loadword指令的话需要访存阶段才能够拿到数值吧&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221226163902930.png&#34; alt=&#34;image-20221226163902930&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;空操作指令-nop的作用&#34;&gt;&lt;a href=&#34;#空操作指令-nop的作用&#34; class=&#34;headerlink&#34; title=&#34;空操作指令 nop的作用&#34;&gt;&lt;/a&gt;空操作指令 nop的作用&lt;/h2&gt;&lt;p&gt;空操作指令(nop 指令)，其不改变程序可见寄存器、状态寄存器以及内存的状态，以及用于等待需要一定周期执行的操作。nop 指令的作用，常见的有：取指的强制访存对齐（memory alignment），防止相关风险（hazard），以及用于填充延迟槽（branch delay slot）。&lt;/p&gt;
 &lt;h1 id=&#34;第六章&#34;&gt;&lt;a href=&#34;#第六章&#34; class=&#34;headerlink&#34; title=&#34;第六章&#34;&gt;&lt;/a&gt;第六章&lt;/h1&gt;&lt;p&gt;执行延迟:统一到这个&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221226160418121.png&#34; alt=&#34;image-20221226160418121&#34;&gt;&lt;/p&gt;
 &lt;p&gt;mips 转移指令有延迟槽??&lt;/p&gt;
@@ -162,11 +163,18 @@
 &lt;p&gt;啥叫全旁路??&lt;/p&gt;
 &lt;p&gt;load的时候需要在mem才能给前递??&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231224522974.png&#34; alt=&#34;image-20221231224522974&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;mips寄存器&#34;&gt;&lt;a href=&#34;#mips寄存器&#34; class=&#34;headerlink&#34; title=&#34;mips寄存器&#34;&gt;&lt;/a&gt;mips寄存器&lt;/h1&gt;&lt;h1 id=&#34;第八章-转移预测&#34;&gt;&lt;a href=&#34;#第八章-转移预测&#34; class=&#34;headerlink&#34; title=&#34;第八章 转移预测&#34;&gt;&lt;/a&gt;第八章 转移预测&lt;/h1&gt;&lt;p&gt;今年大概率考那个预测情况,推演?看ppt&lt;/p&gt;
+&lt;h1 id=&#34;mips寄存器&#34;&gt;&lt;a href=&#34;#mips寄存器&#34; class=&#34;headerlink&#34; title=&#34;mips寄存器&#34;&gt;&lt;/a&gt;mips寄存器&lt;/h1&gt;&lt;h1 id=&#34;第七章-多发射&#34;&gt;&lt;a href=&#34;#第七章-多发射&#34; class=&#34;headerlink&#34; title=&#34;第七章 多发射&#34;&gt;&lt;/a&gt;第七章 多发射&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102135923351.png&#34; alt=&#34;image-20230102135923351&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第八章-转移预测&#34;&gt;&lt;a href=&#34;#第八章-转移预测&#34; class=&#34;headerlink&#34; title=&#34;第八章 转移预测&#34;&gt;&lt;/a&gt;第八章 转移预测&lt;/h1&gt;&lt;p&gt;今年大概率考那个预测情况,推演?看ppt&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101151357744.png&#34; alt=&#34;image-20230101151357744&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-…-的分支预测正确率。（2021复习题）&#34;&gt;&lt;a href=&#34;#分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-…-的分支预测正确率。（2021复习题）&#34; class=&#34;headerlink&#34; title=&#34;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++){…}的分支预测正确率。（2021复习题）&#34;&gt;&lt;/a&gt;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++){…}的分支预测正确率。（2021复习题）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101151819819.png&#34; alt=&#34;image-20230101151819819&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-for-k-x3D-0-k-lt-10-k-…-的分支预测正确率。（2021真题）&#34;&gt;&lt;a href=&#34;#分析：for-i-x3D-0-i-lt-10-i-for-j-x3D-0-j-lt-10-j-for-k-x3D-0-k-lt-10-k-…-的分支预测正确率。（2021真题）&#34; class=&#34;headerlink&#34; title=&#34;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++) for(k&amp;#x3D;0;k&amp;lt;10;k++){…}的分支预测正确率。（2021真题）&#34;&gt;&lt;/a&gt;分析：for (i&amp;#x3D;0;i&amp;lt;10;i++) for(j&amp;#x3D;0;j&amp;lt;10;j++) for(k&amp;#x3D;0;k&amp;lt;10;k++){…}的分支预测正确率。（2021真题）&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101223213584.png&#34; alt=&#34;image-20230101223213584&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101160414867.png&#34; alt=&#34;image-20230101160414867&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102114754390.png&#34; alt=&#34;image-20230102114754390&#34;&gt;&lt;/p&gt;
+&lt;p&gt;（7+9&lt;em&gt;99）&amp;#x2F;1000,(7+9&lt;/em&gt;9)&amp;#x2F;100,7&amp;#x2F;10?&lt;/p&gt;
+&lt;p&gt;for(R3&amp;#x3D;9;R3&amp;gt;0;R3–)for(R2&amp;#x3D;9;R2&amp;gt;0;R2–)for(R1&amp;#x3D;9;R1&amp;gt;0;R1–){…}&lt;/p&gt;
+&lt;p&gt;R0的值恒为0&lt;/p&gt;
+&lt;p&gt;BENZ，BEQZ均为条件分支指令；&lt;br&gt;BENZ R1,NAME;&amp;#x2F;&amp;#x2F;R1不等于0，程序跳转，以NAME为偏移地址&lt;br&gt;BEQZ R1,NAME;&amp;#x2F;&amp;#x2F;R1&amp;#x3D;0，程序跳转到，以NAME为偏移地址&lt;br&gt;否则，执行下一条指令&lt;/p&gt;
+&lt;h1 id=&#34;第九章-运算部件&#34;&gt;&lt;a href=&#34;#第九章-运算部件&#34; class=&#34;headerlink&#34; title=&#34;第九章 运算部件&#34;&gt;&lt;/a&gt;第九章 运算部件&lt;/h1&gt;&lt;p&gt;华莱士树&lt;/p&gt;
 &lt;h1 id=&#34;第十章-高速缓存&#34;&gt;&lt;a href=&#34;#第十章-高速缓存&#34; class=&#34;headerlink&#34; title=&#34;第十章: 高速缓存&#34;&gt;&lt;/a&gt;第十章: 高速缓存&lt;/h1&gt;&lt;p&gt;VIPT(虚index,实tag)结构中,需要在cache中使用页着色技术.vipt即用虚拟地址索引cache,用物理地址匹配tag&lt;/p&gt;
 &lt;p&gt;当vipt的cache,每一路的容量大于页的大小的时候,就会出现cache别名问题&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231211724962.png&#34; alt=&#34;image-20221231211724962&#34;&gt;&lt;/p&gt;
@@ -176,7 +184,13 @@
 &lt;p&gt;16*4 + 128&lt;/p&gt;
 &lt;p&gt;(64&amp;#x2F;2 + 64&amp;#x2F;2 ) * 3 + 64&lt;/p&gt;
 &lt;p&gt;(64&amp;#x2F;2 + 64&amp;#x2F;2 ) * 3 + 64&lt;/p&gt;
+&lt;p&gt;算的有点小问题….一个tlb项对应两个物理页才对&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101160302012.png&#34; alt=&#34;image-20230101160302012&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102112339663.png&#34; alt=&#34;image-20230102112339663&#34;&gt;&lt;/p&gt;
+&lt;p&gt;ab都128页&lt;/p&gt;
+&lt;p&gt;256次invalid&lt;/p&gt;
+&lt;p&gt;refill的话 注意看两次循环是一个从头开始,一个从尾部开始,所以最后应该要有重叠的部分! &lt;/p&gt;
+&lt;p&gt;应该是256-32&lt;/p&gt;
 &lt;h1 id=&#34;20年题目&#34;&gt;&lt;a href=&#34;#20年题目&#34; class=&#34;headerlink&#34; title=&#34;20年题目&#34;&gt;&lt;/a&gt;20年题目&lt;/h1&gt;&lt;h2 id=&#34;1&#34;&gt;&lt;a href=&#34;#1&#34; class=&#34;headerlink&#34; title=&#34;1&#34;&gt;&lt;/a&gt;1&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20221231230312603.png&#34; alt=&#34;image-20221231230312603&#34;&gt;&lt;/p&gt;
 &lt;p&gt;五级流水: 取址,译码,执行,访存,写会  IF,ID,EX,MEM,WB 英文全称是什么呢??&lt;/p&gt;
 &lt;p&gt;指令相关: 数据相关、结构相关和控制相关&lt;/p&gt;
@@ -202,6 +216,13 @@
 &lt;h2 id=&#34;7-多处理器&#34;&gt;&lt;a href=&#34;#7-多处理器&#34; class=&#34;headerlink&#34; title=&#34;7 多处理器&#34;&gt;&lt;/a&gt;7 多处理器&lt;/h2&gt;&lt;h2 id=&#34;9-转移猜测&#34;&gt;&lt;a href=&#34;#9-转移猜测&#34; class=&#34;headerlink&#34; title=&#34;9 转移猜测&#34;&gt;&lt;/a&gt;9 转移猜测&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101150434124.png&#34; alt=&#34;image-20230101150434124&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;10&#34;&gt;&lt;a href=&#34;#10&#34; class=&#34;headerlink&#34; title=&#34;10&#34;&gt;&lt;/a&gt;10&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101005258347.png&#34; alt=&#34;image-20230101005258347&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230101223241997.png&#34; alt=&#34;image-20230101223241997&#34;&gt;&lt;/p&gt;
+&lt;p&gt;128+32invalid 64+32refill来着&lt;/p&gt;
+&lt;h1 id=&#34;7788的存储&#34;&gt;&lt;a href=&#34;#7788的存储&#34; class=&#34;headerlink&#34; title=&#34;7788的存储&#34;&gt;&lt;/a&gt;7788的存储&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102010039930.png&#34; alt=&#34;image-20230102010039930&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以第十章第一题那三个如果都是32位处理器情况下tag都是31:12吗&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102010922731.png&#34; alt=&#34;image-20230102010922731&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102011212154.png&#34; alt=&#34;image-20230102011212154&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/16279B7395C9EEC8444656E5E73B12C4.jpg&#34; alt=&#34;16279B7395C9EEC8444656E5E73B12C4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/26/ucas-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84-%E5%A4%8D%E4%B9%A0%E4%B8%8A/image-20230102113847140.png&#34; alt=&#34;image-20230102113847140&#34;&gt;&lt;/p&gt;
 </content>
         <updated>2022-12-26T08:03:28.000Z</updated>
     </entry>
