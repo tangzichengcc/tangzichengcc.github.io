@@ -14,7 +14,8 @@
             <title>ucas-网络与系统安全-复习</title>
             <link>https://tangzichengcc.github.io/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/</link>
             <pubDate>Fri, 30 Dec 2022 19:18:28 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;第一次课：&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;多选单选论述&lt;/p&gt;
+&lt;p&gt;第一次课：&lt;/p&gt;
 &lt;p&gt;信息技术的发展趋势：融合、扩张、协作；&lt;/p&gt;
 &lt;p&gt;信息安全面临的挑战：隐私、身份、电子依赖、信任绑架、信息财富、边界模糊&lt;/p&gt;
 &lt;h2 id=&#34;信息安全的技术发展趋势，保护、检测、可生存、可信赖；&#34;&gt;&lt;a href=&#34;#信息安全的技术发展趋势，保护、检测、可生存、可信赖；&#34; class=&#34;headerlink&#34; title=&#34;信息安全的技术发展趋势，保护、检测、可生存、可信赖；&#34;&gt;&lt;/a&gt;信息安全的技术发展趋势，保护、检测、可生存、可信赖；&lt;/h2&gt;&lt;p&gt;保佑又叫全周期…&lt;/p&gt;
@@ -31,14 +32,43 @@
 &lt;p&gt;基于属性的访问控制（ABAC）：基本概念，主要元素，基本架构，传统访问控制模型与ABAC的联系；基于属性的策略。&lt;/p&gt;
 &lt;h1 id=&#34;第五次课：网络边界与防护&#34;&gt;&lt;a href=&#34;#第五次课：网络边界与防护&#34; class=&#34;headerlink&#34; title=&#34;第五次课：网络边界与防护&#34;&gt;&lt;/a&gt;第五次课：网络边界与防护&lt;/h1&gt;&lt;h2 id=&#34;IPSEC协议的两个基本协议：鉴别头协议AH和有效载荷封装协议；&#34;&gt;&lt;a href=&#34;#IPSEC协议的两个基本协议：鉴别头协议AH和有效载荷封装协议；&#34; class=&#34;headerlink&#34; title=&#34;IPSEC协议的两个基本协议：鉴别头协议AH和有效载荷封装协议；&#34;&gt;&lt;/a&gt;IPSEC协议的两个基本协议：鉴别头协议AH和有效载荷封装协议；&lt;/h2&gt;&lt;h2 id=&#34;IPSEC-的两个工作模式：传输模式和隧道模式；&#34;&gt;&lt;a href=&#34;#IPSEC-的两个工作模式：传输模式和隧道模式；&#34; class=&#34;headerlink&#34; title=&#34;IPSEC 的两个工作模式：传输模式和隧道模式；&#34;&gt;&lt;/a&gt;IPSEC 的两个工作模式：传输模式和隧道模式；&lt;/h2&gt;&lt;h2 id=&#34;TLS协议握手过程、中间人攻击；&#34;&gt;&lt;a href=&#34;#TLS协议握手过程、中间人攻击；&#34; class=&#34;headerlink&#34; title=&#34;TLS协议握手过程、中间人攻击；&#34;&gt;&lt;/a&gt;TLS协议握手过程、中间人攻击；&lt;/h2&gt;&lt;p&gt;四个阶段,握手是干什么的,怎么完成身份鉴别,密钥协商,安全的通道&lt;/p&gt;
 &lt;h2 id=&#34;VPN基本原理，VPN技术在TLS和IPSEC层面实现&#34;&gt;&lt;a href=&#34;#VPN基本原理，VPN技术在TLS和IPSEC层面实现&#34; class=&#34;headerlink&#34; title=&#34;VPN基本原理，VPN技术在TLS和IPSEC层面实现&#34;&gt;&lt;/a&gt;VPN基本原理，VPN技术在TLS和IPSEC层面实现&lt;/h2&gt;&lt;h2 id=&#34;防火墙基本原理&#34;&gt;&lt;a href=&#34;#防火墙基本原理&#34; class=&#34;headerlink&#34; title=&#34;防火墙基本原理&#34;&gt;&lt;/a&gt;防火墙基本原理&lt;/h2&gt;&lt;p&gt;了解几种防火墙的基本原理和特性&lt;/p&gt;
-&lt;h1 id=&#34;第六次课：网络权限管理&#34;&gt;&lt;a href=&#34;#第六次课：网络权限管理&#34; class=&#34;headerlink&#34; title=&#34;第六次课：网络权限管理&#34;&gt;&lt;/a&gt;第六次课：网络权限管理&lt;/h1&gt;&lt;p&gt;PMI（Privilege Management Infrastructure，权限管理基础设施）中SOA、AA等实体的作用&lt;/p&gt;
-&lt;p&gt;基于属性的访问控制与PMI的关系。&lt;/p&gt;
-&lt;p&gt; PKI&lt;/p&gt;
+&lt;h1 id=&#34;第六次课：网络权限管理&#34;&gt;&lt;a href=&#34;#第六次课：网络权限管理&#34; class=&#34;headerlink&#34; title=&#34;第六次课：网络权限管理&#34;&gt;&lt;/a&gt;第六次课：网络权限管理&lt;/h1&gt;&lt;h2 id=&#34;PMI（Privilege-Management-Infrastructure，权限管理基础设施）中SOA、AA等实体的作用&#34;&gt;&lt;a href=&#34;#PMI（Privilege-Management-Infrastructure，权限管理基础设施）中SOA、AA等实体的作用&#34; class=&#34;headerlink&#34; title=&#34;PMI（Privilege Management Infrastructure，权限管理基础设施）中SOA、AA等实体的作用&#34;&gt;&lt;/a&gt;PMI（Privilege Management Infrastructure，权限管理基础设施）中SOA、AA等实体的作用&lt;/h2&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105103406935.png&#34; alt=&#34;image-20230105103406935&#34; style=&#34;zoom:50%;&#34;&gt;
+
+&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105103506381.png&#34; alt=&#34;image-20230105103506381&#34; style=&#34;zoom:50%;&#34;&gt;
+
+&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105103835548.png&#34; alt=&#34;image-20230105103835548&#34; style=&#34;zoom:50%;&#34;&gt;
+
+&lt;h2 id=&#34;基于属性的访问控制与PMI的关系。&#34;&gt;&lt;a href=&#34;#基于属性的访问控制与PMI的关系。&#34; class=&#34;headerlink&#34; title=&#34;基于属性的访问控制与PMI的关系。&#34;&gt;&lt;/a&gt;基于属性的访问控制与PMI的关系。&lt;/h2&gt;&lt;h2 id=&#34;PKI的基本概念-包括数字证书的生命周期、CRL、OCSP&#34;&gt;&lt;a href=&#34;#PKI的基本概念-包括数字证书的生命周期、CRL、OCSP&#34; class=&#34;headerlink&#34; title=&#34;PKI的基本概念,包括数字证书的生命周期、CRL、OCSP&#34;&gt;&lt;/a&gt;PKI的基本概念,包括数字证书的生命周期、CRL、OCSP&lt;/h2&gt;&lt;h3 id=&#34;为什么会有PKI-Public-Key-Infrastructure&#34;&gt;&lt;a href=&#34;#为什么会有PKI-Public-Key-Infrastructure&#34; class=&#34;headerlink&#34; title=&#34;为什么会有PKI(Public Key Infrastructure)&#34;&gt;&lt;/a&gt;为什么会有PKI(Public Key Infrastructure)&lt;/h3&gt;&lt;p&gt;安全通信的前提:双方能够共享一个对称密钥用作会话密钥&lt;/p&gt;
+&lt;p&gt;会话密钥通常由公钥密码协商得到,如Diffie-Hellman密钥交换&lt;/p&gt;
+&lt;p&gt;但是如何安全地知道对方的密钥呢?? 建立具有公信力的可信第三方!&lt;/p&gt;
+&lt;h3 id=&#34;PKI的基本概念&#34;&gt;&lt;a href=&#34;#PKI的基本概念&#34; class=&#34;headerlink&#34; title=&#34;PKI的基本概念&#34;&gt;&lt;/a&gt;PKI的基本概念&lt;/h3&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105101927108.png&#34; alt=&#34;image-20230105101927108&#34; style=&#34;zoom:50%;&#34;&gt;
+
+&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105102009133.png&#34; alt=&#34;image-20230105102009133&#34; style=&#34;zoom:50%;&#34;&gt;
+
+&lt;h3 id=&#34;CRL-证书撤销列表&#34;&gt;&lt;a href=&#34;#CRL-证书撤销列表&#34; class=&#34;headerlink&#34; title=&#34;CRL 证书撤销列表&#34;&gt;&lt;/a&gt;CRL 证书撤销列表&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105102716999.png&#34; alt=&#34;image-20230105102716999&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;OCSP-证书撤销方式&#34;&gt;&lt;a href=&#34;#OCSP-证书撤销方式&#34; class=&#34;headerlink&#34; title=&#34;OCSP 证书撤销方式&#34;&gt;&lt;/a&gt;OCSP 证书撤销方式&lt;/h3&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105103010693.png&#34; alt=&#34;image-20230105103010693&#34; style=&#34;zoom:50%;&#34;&gt;
+
+
+
+&lt;p&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105104157260.png&#34; alt=&#34;image-20230105104157260&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;第七次课：系统权限管理&#34;&gt;&lt;a href=&#34;#第七次课：系统权限管理&#34; class=&#34;headerlink&#34; title=&#34;第七次课：系统权限管理&#34;&gt;&lt;/a&gt;第七次课：系统权限管理&lt;/h1&gt;&lt;h2 id=&#34;移动终端系统与传统PC权限管理需求的区别。&#34;&gt;&lt;a href=&#34;#移动终端系统与传统PC权限管理需求的区别。&#34; class=&#34;headerlink&#34; title=&#34;移动终端系统与传统PC权限管理需求的区别。&#34;&gt;&lt;/a&gt;移动终端系统与传统PC权限管理需求的区别。&lt;/h2&gt;&lt;p&gt;什么什么hold???&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105091924282.png&#34; alt=&#34;image-20230105091924282&#34;&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105092017837.png&#34; alt=&#34;image-20230105092017837&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;Android-Permission机制与Linux-UGO访问控制的区别与联系。&#34;&gt;&lt;a href=&#34;#Android-Permission机制与Linux-UGO访问控制的区别与联系。&#34; class=&#34;headerlink&#34; title=&#34;Android Permission机制与Linux UGO访问控制的区别与联系。&#34;&gt;&lt;/a&gt;Android Permission机制与Linux UGO访问控制的区别与联系。&lt;/h2&gt;&lt;p&gt;什么curi ablitiy?&lt;/p&gt;
-&lt;h2 id=&#34;Android-Permission机制实现的基本组件和流程。&#34;&gt;&lt;a href=&#34;#Android-Permission机制实现的基本组件和流程。&#34; class=&#34;headerlink&#34; title=&#34;Android Permission机制实现的基本组件和流程。&#34;&gt;&lt;/a&gt;Android Permission机制实现的基本组件和流程。&lt;/h2&gt;&lt;h1 id=&#34;第八次课：入侵检测基本原理&#34;&gt;&lt;a href=&#34;#第八次课：入侵检测基本原理&#34; class=&#34;headerlink&#34; title=&#34;第八次课：入侵检测基本原理&#34;&gt;&lt;/a&gt;第八次课：入侵检测基本原理&lt;/h1&gt;&lt;p&gt;PDR模型的时间关系&lt;/p&gt;
-&lt;p&gt;入侵检测的技术起源，安全审计&lt;/p&gt;
-&lt;p&gt;异常入侵检测和误用入侵检测的区别和联系&lt;/p&gt;
+&lt;h2 id=&#34;Android-Permission机制实现的基本组件和流程。&#34;&gt;&lt;a href=&#34;#Android-Permission机制实现的基本组件和流程。&#34; class=&#34;headerlink&#34; title=&#34;Android Permission机制实现的基本组件和流程。&#34;&gt;&lt;/a&gt;Android Permission机制实现的基本组件和流程。&lt;/h2&gt;&lt;h1 id=&#34;第八次课：入侵检测基本原理&#34;&gt;&lt;a href=&#34;#第八次课：入侵检测基本原理&#34; class=&#34;headerlink&#34; title=&#34;第八次课：入侵检测基本原理&#34;&gt;&lt;/a&gt;第八次课：入侵检测基本原理&lt;/h1&gt;&lt;h2 id=&#34;PDR模型的时间关系&#34;&gt;&lt;a href=&#34;#PDR模型的时间关系&#34; class=&#34;headerlink&#34; title=&#34;PDR模型的时间关系&#34;&gt;&lt;/a&gt;PDR模型的时间关系&lt;/h2&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105113008104.png&#34; alt=&#34;image-20230105113008104&#34; style=&#34;zoom:33%;&#34;&gt;
+
+&lt;p&gt;Pt &amp;gt; Dt + Rt&lt;/p&gt;
+&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105113132134.png&#34; alt=&#34;image-20230105113132134&#34; style=&#34;zoom: 33%;&#34;&gt;
+
+&lt;h2 id=&#34;入侵检测-IDS-的技术起源，安全审计&#34;&gt;&lt;a href=&#34;#入侵检测-IDS-的技术起源，安全审计&#34; class=&#34;headerlink&#34; title=&#34;入侵检测(IDS)的技术起源，安全审计&#34;&gt;&lt;/a&gt;入侵检测(IDS)的技术起源，安全审计&lt;/h2&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105113507224.png&#34; alt=&#34;image-20230105113507224&#34; style=&#34;zoom: 33%;&#34;&gt;
+
+&lt;h2 id=&#34;异常入侵检测和误用入侵检测的区别和联系&#34;&gt;&lt;a href=&#34;#异常入侵检测和误用入侵检测的区别和联系&#34; class=&#34;headerlink&#34; title=&#34;异常入侵检测和误用入侵检测的区别和联系&#34;&gt;&lt;/a&gt;异常入侵检测和误用入侵检测的区别和联系&lt;/h2&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105113654551.png&#34; alt=&#34;image-20230105113654551&#34; style=&#34;zoom: 33%;&#34;&gt;
+
+&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105114015471.png&#34; alt=&#34;image-20230105114015471&#34; style=&#34;zoom:33%;&#34;&gt;
+
+
+
+&lt;h2 id=&#34;思考题&#34;&gt;&lt;a href=&#34;#思考题&#34; class=&#34;headerlink&#34; title=&#34;思考题&#34;&gt;&lt;/a&gt;思考题&lt;/h2&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20230105114231965.png&#34; alt=&#34;image-20230105114231965&#34; style=&#34;zoom:33%;&#34;&gt;
+
 &lt;h1 id=&#34;第九次课：&#34;&gt;&lt;a href=&#34;#第九次课：&#34; class=&#34;headerlink&#34; title=&#34;第九次课：&#34;&gt;&lt;/a&gt;第九次课：&lt;/h1&gt;&lt;p&gt;入侵相应的目标&lt;/p&gt;
 &lt;h2 id=&#34;入侵追踪的基本技术&#34;&gt;&lt;a href=&#34;#入侵追踪的基本技术&#34; class=&#34;headerlink&#34; title=&#34;入侵追踪的基本技术&#34;&gt;&lt;/a&gt;入侵追踪的基本技术&lt;/h2&gt;&lt;p&gt;溯源&lt;/p&gt;
 &lt;p&gt;APT攻击对入侵检测与响应的影响&lt;/p&gt;
@@ -46,12 +76,10 @@
 &lt;p&gt;业务连续性计划的概念，以及业务连续性计划与应急计划的区别和联系&lt;/p&gt;
 &lt;p&gt;容灾备份系统的度量指标：RPO，RTO，NRO和DOO&lt;/p&gt;
 &lt;p&gt;数据备份策略的区别和联系：完全备份、增量备份和差量备份&lt;/p&gt;
-&lt;p&gt;第十一次课：&lt;/p&gt;
-&lt;p&gt;n&amp;#x3D;4，m&amp;#x3D;1，口头消息的拜占庭消息协商过程；&lt;/p&gt;
+&lt;h1 id=&#34;第十一次课：&#34;&gt;&lt;a href=&#34;#第十一次课：&#34; class=&#34;headerlink&#34; title=&#34;第十一次课：&#34;&gt;&lt;/a&gt;第十一次课：&lt;/h1&gt;&lt;p&gt;n&amp;#x3D;4，m&amp;#x3D;1，口头消息的拜占庭消息协商过程；&lt;/p&gt;
 &lt;p&gt;masking BQS的容错条件，及其一致性过程分析&lt;/p&gt;
 &lt;p&gt;让你设计一个容错的系统??? &lt;/p&gt;
-&lt;p&gt;第十二次课&lt;/p&gt;
-&lt;p&gt;密码拆分与门限密码的区别和联系&lt;/p&gt;
+&lt;h1 id=&#34;第十二次课&#34;&gt;&lt;a href=&#34;#第十二次课&#34; class=&#34;headerlink&#34; title=&#34;第十二次课&#34;&gt;&lt;/a&gt;第十二次课&lt;/h1&gt;&lt;p&gt;密码拆分与门限密码的区别和联系&lt;/p&gt;
 &lt;p&gt;秘密分享和门限密码不一样&lt;/p&gt;
 &lt;p&gt;拉格朗日差值秘密拆分方案&lt;/p&gt;
 &lt;p&gt;RSA门限密码实施过程&lt;/p&gt;
@@ -73,6 +101,7 @@
 &lt;p&gt;FIPS测评和CC测评的基本内容；&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20221230201416449.png&#34; alt=&#34;image-20221230201416449&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/2022/12/30/ucas-%E7%BD%91%E7%BB%9C%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8-%E5%A4%8D%E4%B9%A0/image-20221230201425117.png&#34; alt=&#34;image-20221230201425117&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;历史考题-根据学长学姐回忆&#34;&gt;&lt;a href=&#34;#历史考题-根据学长学姐回忆&#34; class=&#34;headerlink&#34; title=&#34;历史考题(根据学长学姐回忆)&#34;&gt;&lt;/a&gt;历史考题(根据学长学姐回忆)&lt;/h1&gt;&lt;p&gt;状态检测防火墙的原理&lt;br&gt;异常检测和误用检测的区别&lt;br&gt;IPSEC和ssl的区别&lt;br&gt;应急计划和连续性计划的区别。&lt;br&gt;APT攻击的影响。&lt;br&gt;CC准则中st和pp的区别。&lt;br&gt;一个大秘密K由两个秘密s和m组成，两个子秘密不可以暴露，分发给n个人如何分发。&lt;br&gt;不可以用ocsl和什么（记不清楚了），使用rsa门限算法，和秘密分享技术。设计一个服务器撤销证书之后，用户立刻&lt;br&gt;不可以进行签名。描述其具体过程。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
